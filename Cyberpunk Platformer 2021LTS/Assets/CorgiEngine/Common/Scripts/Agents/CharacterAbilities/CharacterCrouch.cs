@@ -131,6 +131,11 @@ namespace MoreMountains.CorgiEngine
 			if ( (Mathf.Abs(_horizontalInput) > 0) && (CrawlAuthorized) )
 			{
 				_movement.ChangeState(CharacterStates.MovementStates.Crawling);
+
+
+
+				//Create a Coroutine to ExitCrouch after a set time
+
 			}
 
 			// we resize our collider to match the new shape of our character (it's usually smaller when crouched)
@@ -327,5 +332,11 @@ namespace MoreMountains.CorgiEngine
 				MMAnimatorExtensions.UpdateAnimatorBool(_animator, _crawlingAnimationParameter, false, _character._animatorParameters, _character.PerformAnimatorSanityChecks);	
 			}
 		}
+
+
+		
+
+
+
 	}
 }
