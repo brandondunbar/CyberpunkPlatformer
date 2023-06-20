@@ -311,7 +311,7 @@ MonoBehaviour:
   BlockingConditionStates: 
   BlockingWeaponStates: 
   CrawlAuthorized: 1
-  CrawlSpeed: 5
+  CrawlSpeed: 8
   ResizeColliderWhenCrouched: 1
   CrouchedBoxColliderSize: {x: 0.35, y: 0.3}
   CanCrouchWhileMoving: 1

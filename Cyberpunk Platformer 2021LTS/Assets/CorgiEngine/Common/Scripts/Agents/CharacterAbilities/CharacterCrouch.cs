@@ -134,7 +134,7 @@ namespace MoreMountains.CorgiEngine
 
 
 
-				//Create a Coroutine to ExitCrouch after a set time
+			
 
 			}
 
