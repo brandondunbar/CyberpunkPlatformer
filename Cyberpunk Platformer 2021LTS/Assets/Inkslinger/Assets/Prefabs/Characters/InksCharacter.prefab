@@ -184,7 +184,7 @@ MonoBehaviour:
     _layerIndex: 0
   StandingOn: {fileID: 0}
   UpdateMode: 0
-  NumberOfHorizontalRays: 4
+  NumberOfHorizontalRays: 10
   NumberOfVerticalRays: 4
   RayOffsetHorizontal: 0.01
   RayOffsetVertical: 0.01
@@ -286,7 +286,7 @@ MonoBehaviour:
   ReadInput: 1
   InstantAcceleration: 0
   InputThreshold: 0.1
-  AirControl: 1
+  AirControl: 0.803
   AllowFlipInTheAir: 1
   ActiveAfterDeath: 0
   TouchTheGroundFeedback: {fileID: 0}
@@ -366,7 +366,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119040}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98ba246fa819940cb8f8f89f002bb088, type: 3}
   m_Name: 
@@ -441,7 +441,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119040}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d37391d2147a467db78bf732ae24daa, type: 3}
   m_Name: 
@@ -698,8 +698,8 @@ MonoBehaviour:
   CurrentHealth: 0
   TemporarilyInvulnerable: 0
   PostDamageInvulnerable: 0
-  InitialHealth: 300
-  MaximumHealth: 300
+  InitialHealth: 100
+  MaximumHealth: 100
   Invulnerable: 0
   ImmuneToDamage: 0
   DamageFeedbacks: {fileID: 1159074697136316710}
@@ -905,7 +905,7 @@ MonoBehaviour:
   NestDrawnHealthBar: 0
   Billboard: 0
   InstantiatedOnDeath: {fileID: 0}
-  HealthBarOffset: {x: 0, y: 0.5, z: 0}
+  HealthBarOffset: {x: 0, y: 1, z: 0}
   AlwaysVisible: 0
   DisplayDurationOnHit: 1
   HideBarAtZero: 1
