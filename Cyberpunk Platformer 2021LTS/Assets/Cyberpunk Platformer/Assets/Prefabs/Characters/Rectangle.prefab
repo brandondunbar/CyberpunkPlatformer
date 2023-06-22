@@ -314,7 +314,7 @@ MonoBehaviour:
   CrawlSpeed: 4
   ResizeColliderWhenCrouched: 1
   CrouchedBoxColliderSize: {x: 0.35, y: 0.3}
-  CanCrouchWhileMoving: 0
+  CanCrouchWhileMoving: 1
   CanMoveWhileCrouching: 1
   InATunnel: 0
   MoveCameraTarget: 1

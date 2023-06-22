@@ -128,6 +128,7 @@ namespace MoreMountains.CorgiEngine
 			_movement.ChangeState(CharacterStates.MovementStates.Crouching);
 			_crouching = true;
 			
+			
 			if ( (Mathf.Abs(_horizontalInput) > 0) && (CrawlAuthorized) )
 			{
 				_movement.ChangeState(CharacterStates.MovementStates.Crawling);
