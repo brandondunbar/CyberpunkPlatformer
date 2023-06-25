@@ -15,9 +15,9 @@ MonoBehaviour:
   ItemID: PistolCP
   TargetInventoryName: MainInventory
   ForceSlotIndex: 0
-  TargetIndex: 0
+  TargetIndex: 1
   Usable: 0
-  Consumable: 1
+  Consumable: 0
   ConsumeQuantity: 1
   Equippable: 1
   EquippableIfInventoryIsFull: 1
