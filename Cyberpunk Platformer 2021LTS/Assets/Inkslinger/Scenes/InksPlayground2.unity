@@ -4315,7 +4315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2d96dc71d76c4e2ab8eb19d92d40d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item: {fileID: 11400000, guid: 359e909298c445f4c9107367c2f4c8c4, type: 2}
+  Item: {fileID: 11400000, guid: 6bcc2f1d7f347b1499de164cb30e7a34, type: 2}
   Quantity: 1
   RemainingQuantity: 1
   PickableIfInventoryIsFull: 0

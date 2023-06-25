@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4829572fcd2f98479c803ffaf809268, type: 3}
+  m_Script: {fileID: 11500000, guid: 615175c974bc63143b9979286acd8838, type: 3}
   m_Name: PistolCP
   m_EditorClassIdentifier: 
   ItemID: PistolCP
@@ -22,7 +22,7 @@ MonoBehaviour:
   Equippable: 1
   EquippableIfInventoryIsFull: 1
   MoveWhenEquipped: 1
-  Droppable: 0
+  Droppable: 1
   CanMoveObject: 1
   CanSwapObject: 1
   DisplayProperties:
@@ -34,7 +34,7 @@ MonoBehaviour:
     DisplayUnequipButton: 1
   Quantity: 1
   ItemName: Pistol
-  ShortDescription: It's a Gun
+  ShortDescription: 
   Description: 
   Icon: {fileID: 21300000, guid: 2f403f1f1777a194389e268180e13ce8, type: 3}
   Prefab: {fileID: 1000010407495960, guid: 35297386bb84580438965b7f33f34f25, type: 3}
