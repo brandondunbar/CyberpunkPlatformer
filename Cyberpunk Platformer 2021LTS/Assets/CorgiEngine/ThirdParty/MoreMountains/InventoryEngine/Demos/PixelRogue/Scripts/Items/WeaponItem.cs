@@ -3,6 +3,7 @@ using System.Collections;
 using MoreMountains.Tools;
 using System;
 
+
 namespace MoreMountains.InventoryEngine
 {	
 	[CreateAssetMenu(fileName = "WeaponItem", menuName = "MoreMountains/InventoryEngine/WeaponItem", order = 2)]
@@ -22,7 +23,9 @@ namespace MoreMountains.InventoryEngine
 		public override bool Equip(string playerID)
 		{
 			base.Equip(playerID);
-            TargetInventory(playerID).TargetTransform.GetComponent<InventoryDemoCharacter>().SetWeapon(WeaponSprite, this);
+            // Commented out code below because I'm pretty sure this is old code, it accesses a super basic Demo Character that has no use anymore
+            //TargetInventory(playerID).TargetTransform.GetComponent<InventoryDemoCharacter>().SetWeapon(WeaponSprite, this);  
+
             return true;
 		}
 
@@ -32,8 +35,9 @@ namespace MoreMountains.InventoryEngine
 		public override bool UnEquip(string playerID)
 		{
 			base.UnEquip(playerID);
-			TargetInventory(playerID).TargetTransform.GetComponent<InventoryDemoCharacter>().SetWeapon(null,this);
-			return true;
+            // Commented out code below because I'm pretty sure this is old code, it accesses a super basic Demo Character that has no use anymore
+            //TargetInventory(playerID).TargetTransform.GetComponent<InventoryDemoCharacter>().SetWeapon(null,this);
+            return true;
 		}
 		
 	}

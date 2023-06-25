@@ -4212,6 +4212,7 @@ GameObject:
   - component: {fileID: 897451553}
   - component: {fileID: 897451552}
   - component: {fileID: 897451555}
+  - component: {fileID: 897451556}
   m_Layer: 0
   m_Name: PistolCPPicker
   m_TagString: Untagged
@@ -4295,7 +4296,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897451551}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.39, y: 1.79, z: 0}
+  m_LocalPosition: {x: -10.92, y: -3.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4322,6 +4323,25 @@ MonoBehaviour:
   RequirePlayerTag: 1
   PickFeedbacks: {fileID: 0}
   ResetQuantityOnPlayerRespawn: 1
+--- !u!114 &897451556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897451551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a381649f4adc480448ac6505907e4edd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PickFeedbacks: {fileID: 0}
+  DisableObjectOnPick: 1
+  DisableRendererOnPick: 0
+  DisableColliderOnPick: 0
+  DisableTargetObjectOnPick: 0
+  TargetObjectToDisable: {fileID: 0}
+  TargetObjectDisableDelay: 1
 --- !u!850595691 &903185940
 LightingSettings:
   m_ObjectHideFlags: 0

@@ -36,6 +36,7 @@ GameObject:
   - component: {fileID: 114501317147000200}
   - component: {fileID: 114409196396544568}
   - component: {fileID: 1583276893178277904}
+  - component: {fileID: -5701377151603686006}
   m_Layer: 9
   m_Name: RectangleWithInventoryInks
   m_TagString: Player
@@ -463,7 +464,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119040}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d37391d2147a467db78bf732ae24daa, type: 3}
   m_Name: 
@@ -664,8 +665,7 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  InitialWeapon: {fileID: 114000010078180980, guid: 35297386bb84580438965b7f33f34f25,
-    type: 3}
+  InitialWeapon: {fileID: 0}
   CanPickupWeapons: 1
   WeaponAttachment: {fileID: 1045624886806204120}
   ForceWeaponScaleResetOnEquip: 0
@@ -1011,6 +1011,23 @@ MonoBehaviour:
   ResetAngleInTheAir: 1
   RotateWeapon: 1
   RaycastLength: 1
+--- !u!114 &-5701377151603686006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119040}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 343c94e0c8fd410408c3bd8cb7fe38dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerID: Player1
+  CharacterSpeed: 300
+  WeaponSprite: {fileID: 0}
+  ArmorInventory: {fileID: 0}
+  WeaponInventory: {fileID: 0}
 --- !u!1 &159142
 GameObject:
   m_ObjectHideFlags: 0
