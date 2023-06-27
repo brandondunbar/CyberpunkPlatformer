@@ -4756,12 +4756,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4000013472678096}
+  - component: {fileID: 8771467887237761919}
   - component: {fileID: 114000013241137692}
   - component: {fileID: 4488774879547322731}
   - component: {fileID: 114000013184825386}
   - component: {fileID: 114554218616921242}
   - component: {fileID: 114800851471367352}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PistolCPWithAmmo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4791,7 +4792,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114000013241137692
+--- !u!114 &8771467887237761919
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4799,6 +4800,35 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000010407495960}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ae0beb1f1109a6408ca758c6ec20e12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AimControl: 3
+  RotationMode: 0
+  WeaponRotationSpeed: 0
+  InstantFlip: 0
+  PreventAimWhileWeaponIsInUse: 0
+  MinimumAngle: -180
+  MaximumAngle: 180
+  IgnoreSlopeRotation: 0
+  IgnoreDownWhenGrounded: 0
+  Reticle: {fileID: 1000010525066036, guid: fdff91f9c641e4bc4ae800f161c07e1f, type: 3}
+  DisplayReticle: 1
+  ReticleDistance: 4
+  ReticleZPosition: 0
+  ReticleAtMousePosition: 1
+  RotateReticle: 0
+  ReplaceMousePointer: 1
+  DisableReticleOnDeath: 1
+--- !u!114 &114000013241137692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010407495960}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0514d297deadac74fb15a7b7326ff0d2, type: 3}
   m_Name: 
@@ -4949,7 +4979,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000010407495960}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03aaf62627f364a7d92d307729fe738d, type: 3}
   m_Name: 
@@ -5009,7 +5039,7 @@ GameObject:
   - component: {fileID: 4000012754714512}
   - component: {fileID: 212000011416355666}
   - component: {fileID: 114315540364154384}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MachineGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9928,7 +9958,7 @@ GameObject:
   - component: {fileID: 1616369031305176696}
   - component: {fileID: 5667475200589215344}
   - component: {fileID: 4433737312798436790}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponUsedFeedback
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10598,7 +10628,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6011952924112862162}
   - component: {fileID: 8706521059855811423}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponStopFeedback
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10718,7 +10748,7 @@ GameObject:
   - component: {fileID: 606898834048261920}
   - component: {fileID: 7425395330571014035}
   - component: {fileID: 6528227927041804890}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponReloadNeededFeedback
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10886,7 +10916,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7048286316604635795}
   - component: {fileID: 7031584168890511415}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponStartFeedback
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11006,7 +11036,7 @@ GameObject:
   - component: {fileID: 2006700117863575615}
   - component: {fileID: 3015577052063659557}
   - component: {fileID: 6323279947418919059}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponReloadFeedback
   m_TagString: Untagged
   m_Icon: {fileID: 0}
