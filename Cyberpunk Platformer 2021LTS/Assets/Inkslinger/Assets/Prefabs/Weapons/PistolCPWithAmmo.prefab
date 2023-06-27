@@ -4757,7 +4757,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4000013472678096}
   - component: {fileID: 114000013241137692}
-  - component: {fileID: 114000010078180980}
+  - component: {fileID: 4488774879547322731}
   - component: {fileID: 114000013184825386}
   - component: {fileID: 114554218616921242}
   - component: {fileID: 114800851471367352}
@@ -4803,7 +4803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0514d297deadac74fb15a7b7326ff0d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AimControl: 2
+  AimControl: 3
   RotationMode: 0
   WeaponRotationSpeed: 0
   InstantFlip: 0
@@ -4820,7 +4820,7 @@ MonoBehaviour:
   RotateReticle: 1
   ReplaceMousePointer: 0
   DisableReticleOnDeath: 1
---- !u!114 &114000010078180980
+--- !u!114 &4488774879547322731
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4829,13 +4829,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000010407495960}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d7ce0b8cf4b34859b9e359283b2e7f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f4958ead3f9f024a989acbd03188a80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   TriggerMode: 0
   DelayBeforeUse: 0
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 1
+  TimeBetweenUses: 0.5
   TimeBetweenUsesReleaseInterruption: 1
   Interruptable: 0
   InitializeOnStart: 0
@@ -4949,7 +4949,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000010407495960}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03aaf62627f364a7d92d307729fe738d, type: 3}
   m_Name: 

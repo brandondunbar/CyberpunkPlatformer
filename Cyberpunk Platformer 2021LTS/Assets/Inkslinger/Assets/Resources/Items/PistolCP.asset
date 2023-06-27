@@ -33,7 +33,7 @@ MonoBehaviour:
     DisplayUseButton: 1
     DisplayUnequipButton: 1
   Quantity: 1
-  ItemName: 
+  ItemName: Pistol
   ShortDescription: 
   Description: 
   Icon: {fileID: 21300000, guid: 17525ebcd26e8074aa4b7c0c87436c33, type: 3}
@@ -89,7 +89,7 @@ MonoBehaviour:
   MovedSound: {fileID: 0}
   DroppedSound: {fileID: 0}
   UseDefaultSoundsIfNull: 1
-  EquippableWeapon: {fileID: 114000010078180980, guid: 35297386bb84580438965b7f33f34f25,
+  EquippableWeapon: {fileID: 4488774879547322731, guid: 35297386bb84580438965b7f33f34f25,
     type: 3}
   AutoEquipMode: 0
   HandleWeaponID: 1
