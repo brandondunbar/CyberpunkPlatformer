@@ -9,15 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 615175c974bc63143b9979286acd8838, type: 3}
+  m_Script: {fileID: 11500000, guid: 3dc40b98607fc8544a3698fc5f3da495, type: 3}
   m_Name: PistolCP
   m_EditorClassIdentifier: 
   ItemID: PistolCP
   TargetInventoryName: MainInventory
   ForceSlotIndex: 0
-  TargetIndex: 1
+  TargetIndex: 0
   Usable: 0
-  Consumable: 0
+  Consumable: 1
   ConsumeQuantity: 1
   Equippable: 1
   EquippableIfInventoryIsFull: 1
@@ -33,7 +33,7 @@ MonoBehaviour:
     DisplayUseButton: 1
     DisplayUnequipButton: 1
   Quantity: 1
-  ItemName: Pistol
+  ItemName: 
   ShortDescription: 
   Description: 
   Icon: {fileID: 21300000, guid: 2f403f1f1777a194389e268180e13ce8, type: 3}
@@ -82,11 +82,14 @@ MonoBehaviour:
     MinimumScale: {x: 1, y: 1, z: 1}
     MaximumScale: {x: 1, y: 1, z: 1}
   MaximumStack: 1
-  ItemClass: 0
+  ItemClass: 2
   TargetEquipmentInventoryName: WeaponInventory
   EquippedSound: {fileID: 0}
   UsedSound: {fileID: 0}
   MovedSound: {fileID: 0}
   DroppedSound: {fileID: 0}
   UseDefaultSoundsIfNull: 1
-  WeaponSprite: {fileID: 21300000, guid: 2f403f1f1777a194389e268180e13ce8, type: 3}
+  EquippableWeapon: {fileID: 114000010078180980, guid: 35297386bb84580438965b7f33f34f25,
+    type: 3}
+  AutoEquipMode: 0
+  HandleWeaponID: 1

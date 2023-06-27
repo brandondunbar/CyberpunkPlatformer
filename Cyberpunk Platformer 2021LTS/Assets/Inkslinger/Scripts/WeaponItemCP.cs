@@ -4,18 +4,20 @@ using UnityEngine;
 using MoreMountains.Tools;
 using MoreMountains.InventoryEngine;
 using Unity.VisualScripting;
+using MoreMountains.CorgiEngine;
 
 [CreateAssetMenu(fileName = "New WeaponItem", menuName = "Custom/WeaponItem")]
 public class WeaponItemCP : WeaponItem
 {
 
-    
-    
 
+   
 
     public override bool Equip(string playerID)
     {
+
         //This code runs when weapon is equipped
+       
 
         base.Equip(playerID);
         //Put a pin in this (Work on weapon ability):
