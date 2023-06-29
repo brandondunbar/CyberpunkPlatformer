@@ -668,7 +668,7 @@ MonoBehaviour:
   InitialWeapon: {fileID: 0}
   CanPickupWeapons: 1
   WeaponAttachment: {fileID: 1045624886806204120}
-  ForceWeaponScaleResetOnEquip: 0
+  ForceWeaponScaleResetOnEquip: 1
   ForceWeaponRotationResetOnEquip: 0
   AutomaticallyBindAnimator: 1
   AmmoDisplayID: 0
