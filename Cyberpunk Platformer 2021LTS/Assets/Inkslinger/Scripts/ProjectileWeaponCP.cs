@@ -60,21 +60,25 @@ public class ProjectileWeaponCP : ProjectileWeapon
         if (playerCharacter != null)
         {
             Collider2D playerCollider = playerCharacter.GetComponent<Collider2D>(); // Get the player's collider
-
             Vector2 playerCenter = playerCollider.bounds.center; // Get the center position of the player character
 
-            //Logic for mouse pos knockback
+            //Knockback based on Mouse pos
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 knockbackDirection = playerCenter - mousePosition;
             Vector2 normalizedKnockbackDirection = knockbackDirection.normalized;
 
-            //Logic for Right Analog stick knockback
+
+
+
+            //Knockback based on right analog Pos
             //Vector2 analogInput = new Vector2(Input.GetAxis("RightStickHorizontal"), Input.GetAxis("RightStickVertical"));
             //Vector2 normalizedKnockbackDirection = new Vector2(-analogInput.x, analogInput.y).normalized; // Invert the y-component
 
 
 
-            float initialKnockbackDistance = knockbackDistance; // Store the initial knockback distance
+            float knockbackSpeed = 10f; // Adjust this value to control the speed of the knockback
+            float knockbackDistance = 2f;// Adjust this value to control the knockback distance
+
 
             // Perform the raycast and knockback
             RaycastHit2D[] hits = new RaycastHit2D[1];
@@ -84,8 +88,8 @@ public class ProjectileWeaponCP : ProjectileWeapon
             // Calculate the end position of the raycast
             Vector2 raycastEnd = playerCenter + normalizedKnockbackDirection * Mathf.Abs(knockbackDistance);
 
-            // Visualize the raycast using the initial knockback distance
-            Debug.DrawRay(playerCenter, normalizedKnockbackDirection * Mathf.Abs(initialKnockbackDistance), Color.red, 1f);
+            // Visualize the raycast
+            Debug.DrawRay(playerCenter, normalizedKnockbackDirection * Mathf.Abs(knockbackDistance), Color.red, 1f);
 
             if (numHits > 0)
             {
@@ -102,10 +106,12 @@ public class ProjectileWeaponCP : ProjectileWeapon
             }
 
             StartCoroutine(PerformKnockback(normalizedKnockbackDirection, knockbackDistance, knockbackSpeed));
-            // Reset knockback to initial knockback for future calls
-            knockbackDistance = initialKnockbackDistance;
+
+
+
         }
     }
+
 
     // Coroutine for smooth knockback movement
     private IEnumerator PerformKnockback(Vector2 direction, float distance, float speed)
