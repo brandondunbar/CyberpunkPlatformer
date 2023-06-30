@@ -340,7 +340,7 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  DashDistance: 5
+  DashDistance: 2
   DashForce: 40
   ResetForcesOnExit: 0
   ForceExactDistance: 0
@@ -355,8 +355,8 @@ MonoBehaviour:
   FlipCharacterIfNeeded: 1
   AutoCorrectTrajectory: 1
   DashDirectionMinThreshold: 0.1
-  DashCooldown: 1
-  LimitedDashes: 0
+  DashCooldown: 0.1
+  LimitedDashes: 1
   SuccessiveDashAmount: 1
   SuccessiveDashesLeft: 1
   SuccessiveDashResetMethod: 0

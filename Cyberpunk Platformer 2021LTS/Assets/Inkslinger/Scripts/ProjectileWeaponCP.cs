@@ -18,15 +18,7 @@ public class ProjectileWeaponCP : ProjectileWeapon
 
 
 
-
-
-    
-
-
-
-
-
-
+    //Currently not implemented
     protected override void Update()
     {
 
@@ -61,7 +53,6 @@ public class ProjectileWeaponCP : ProjectileWeapon
 
 
 
-
     // Apply knockback to the player
     private void ApplyKnockbackToPlayer()
     {
@@ -69,10 +60,20 @@ public class ProjectileWeaponCP : ProjectileWeapon
         if (playerCharacter != null)
         {
             Collider2D playerCollider = playerCharacter.GetComponent<Collider2D>(); // Get the player's collider
+
             Vector2 playerCenter = playerCollider.bounds.center; // Get the center position of the player character
+
+            //Logic for mouse pos knockback
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 knockbackDirection = playerCenter - mousePosition;
             Vector2 normalizedKnockbackDirection = knockbackDirection.normalized;
+
+            //Logic for Right Analog stick knockback
+            //Vector2 analogInput = new Vector2(Input.GetAxis("RightStickHorizontal"), Input.GetAxis("RightStickVertical"));
+            //Vector2 normalizedKnockbackDirection = new Vector2(-analogInput.x, analogInput.y).normalized; // Invert the y-component
+
+
+
             float initialKnockbackDistance = knockbackDistance; // Store the initial knockback distance
 
             // Perform the raycast and knockback
@@ -101,7 +102,7 @@ public class ProjectileWeaponCP : ProjectileWeapon
             }
 
             StartCoroutine(PerformKnockback(normalizedKnockbackDirection, knockbackDistance, knockbackSpeed));
-            //Reset knockback to inital knockback for future calls
+            // Reset knockback to initial knockback for future calls
             knockbackDistance = initialKnockbackDistance;
         }
     }
